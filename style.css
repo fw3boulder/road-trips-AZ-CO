@@ -215,3 +215,6 @@ body.mountain { --forest: #15352f; --forest-2: #24564c; --rust: #1f6b5a; }
 .far .pin i { width: 14px; height: 14px; margin: 9px; border-width: 2px; font-size: 0; }
 #mapbox.big { height: 100vh; height: 100dvh; }
 @media (max-width: 860px) { .mapbar button { font-size: 14px; padding: 9px 13px; } .wrap.mapsec { padding-top: 28px; } }
+
+/* trips by length */
+.length { color: #ffd9b8; font-size: 34px; margin: 20px 0 -12px; }
