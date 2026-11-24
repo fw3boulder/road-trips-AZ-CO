@@ -188,3 +188,15 @@ body.mountain { --forest: #15352f; --forest-2: #24564c; --rust: #1f6b5a; }
 .empty p { margin: 0 0 12px; }
 .empty a { color: #ffd9b8; }
 @media (max-width: 480px) { .switch a { padding: 8px 14px; } .switch b { font-size: 14px; } }
+
+/* offline */
+.offline { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 20px; padding: 18px 22px; border-radius: 14px; background: rgba(255,255,255,.1); font-size: 16px; }
+.offline div { flex: 1 1 320px; }
+.offline button { border: 0; border-radius: 99px; padding: 12px 22px; background: #ffb37a; color: #3a1a0c; font: 700 16px var(--sans); cursor: pointer; }
+#savestate:empty { display: none; }
+#savestate { border-radius: 99px; padding: 6px 14px; font-weight: 600; font-size: 15px; }
+#savestate.ok { background: #d9efdc; color: #1f6b34; }
+#savestate.busy { background: #fdf0d9; color: #8a5200; }
+#savestate.bad { background: #fbdcd6; color: #9b1c1c; }
+.roads { font-size: 15px; margin: 18px 0 6px; }
+[hidden] { display: none !important; }
