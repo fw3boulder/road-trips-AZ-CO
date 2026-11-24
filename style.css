@@ -174,3 +174,17 @@ a.card:hover { transform: translateY(-4px); box-shadow: 0 2px 4px rgba(0,0,0,.06
 .ttext { overflow-wrap: anywhere; }
 .jump .wrap { scrollbar-width: none; }
 @media (max-width: 860px) { .tonight.nophoto .ttext { padding: 26px 22px; } .tonight { grid-template-columns: minmax(0, 1fr); } }
+
+/* region switch on the two landing pages */
+body.mountain { --forest: #15352f; --forest-2: #24564c; --rust: #1f6b5a; }
+.switch { position: absolute; z-index: 2; top: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 4px; padding: 5px;
+  width: max-content; max-width: calc(100% - 24px); border-radius: 99px; background: rgba(20,16,14,.62); backdrop-filter: blur(8px); }
+.switch a { padding: 9px 26px; border-radius: 99px; color: #fff; text-align: center; text-decoration: none; line-height: 1.25; }
+.switch a:hover { background: rgba(255,255,255,.14); }
+.switch a[aria-current] { background: #fff; color: var(--forest); }
+.switch b { display: block; font-size: 16px; white-space: nowrap; }
+.switch span { font-size: 12px; }
+.empty { text-align: center; color: #f1ede4; font: 400 22px/1.5 var(--serif); padding: 32px 16px 48px; }
+.empty p { margin: 0 0 12px; }
+.empty a { color: #ffd9b8; }
+@media (max-width: 480px) { .switch a { padding: 8px 14px; } .switch b { font-size: 14px; } }
