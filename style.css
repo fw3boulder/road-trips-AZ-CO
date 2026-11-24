@@ -200,3 +200,18 @@ body.mountain { --forest: #15352f; --forest-2: #24564c; --rust: #1f6b5a; }
 #savestate.bad { background: #fbdcd6; color: #9b1c1c; }
 .roads { font-size: 15px; margin: 18px 0 6px; }
 [hidden] { display: none !important; }
+
+/* map bar, full screen, pins */
+.mapbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.mapbar button { border: 0; border-radius: 99px; padding: 10px 16px; background: #f7ead9; color: #3a1a0c; font: 700 15px var(--sans); cursor: pointer; }
+.mapbar button:active, .offline button:active { transform: scale(.96); filter: brightness(.9); }
+#hereout { font-size: 15px; }
+#mapbox.big { position: fixed; inset: 0; z-index: 2000; display: flex; flex-direction: column; padding: 8px; background: var(--forest); }
+#mapbox.big .livemap { flex: 1; height: auto; border-radius: 10px; }
+.noscroll { overflow: hidden; }
+.pin i { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; border: 3px solid; background: #fff; font: 16px/1 var(--sans); box-shadow: 0 1px 5px rgba(0,0,0,.4); }
+.leaflet-popup-content { font: 14px/1.45 var(--sans); }
+.livemap { touch-action: none; }
+.far .pin i { width: 14px; height: 14px; margin: 9px; border-width: 2px; font-size: 0; }
+#mapbox.big { height: 100vh; height: 100dvh; }
+@media (max-width: 860px) { .mapbar button { font-size: 14px; padding: 9px 13px; } .wrap.mapsec { padding-top: 28px; } }
